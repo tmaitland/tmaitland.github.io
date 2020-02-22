@@ -1,0 +1,1054 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredericka the Great', cursive!important;
+}
+p {
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 1.25rem;
+}
+#mobile-menu {
+  background-color: aliceblue;
+  /* padding: 0rem 1rem 0rem 0rem; */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 100%;
+  transition: 1s;
+  z-index: 999999;
+  overflow-x: hidden;
+  box-shadow: 1px 2px 27px black;
+  border-left: 5px solid rebeccapurple;
+  border-right: 5px solid rebeccapurple;
+  overflow-y: scroll;
+}
+.menu-ham {
+  font-size: 1.2rem; 
+  position: fixed; 
+  top: 1rem; 
+  color: white; 
+  background: rgba(0, 0, 0, 0.25); 
+  padding: 1rem; 
+  margin-top: 0.25rem;
+}
+.navbar-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#mobile-first-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: aliceblue;
+  height: 100%;
+}
+#mobile-first-nav .nav-link {
+  display: block;
+    color: rebeccapurple;
+    transition: .3s;
+    font-family: 'Fredericka the Great', cursive!important;
+    text-shadow: 1px 1px 3px rgb(0,0,0,.5);
+    font-size: 2rem;
+}
+ #mobile-first-nav .nav-link:hover {
+  text-shadow: 1px 1px 6px rgb(0,0,0,.85);
+  position: relative;
+  top: -2px;
+  color: mediumorchid;
+  transition: .3s;
+} 
+/* #mobile-first-nav .nav-link:hover:after {
+  
+  content: url("../images/hov-div.png");
+  display: block;
+  transition: .3s;
+} */
+
+.close-menu {
+  color: rebeccapurple;
+  width: 100%;
+  transition: .3s;
+  text-shadow: 1px 1px 3px rgb(0,0,0,.5);
+  position: relative;
+  top: 3%;
+  cursor: pointer;
+  text-align: right;
+  left: -9%;
+}
+
+.close-menu:hover {
+  text-shadow: 1px 1px 6px rgb(0,0,0,.85);
+  position: relative;
+  color: mediumorchid;
+  transition: .3s;
+}
+.fa-times {
+  font-size: 2rem;
+}
+.link-name {
+  padding-left: 5rem;
+}
+
+
+	.mobile-menu-trigger {
+		display: block;
+    position: absolute;
+    z-index: 99999;
+    left: 90%;
+    margin-top: 1.25rem;
+    cursor: pointer;
+	}
+
+.pageHeader { 
+    height: 100vh;
+}
+.gradient {
+  background-image: linear-gradient(rgb(0,0,0,0.25), rgb(0,0,0,0.75));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3; 
+}
+.headerText {
+    text-transform: uppercase;
+    text-align: center;
+}
+.headerText h1 {
+  font-size: 3.75rem;
+  text-shadow: 1px 2px 9px #000;
+  color: white;
+}
+.topGreeting {
+  font-size: 1.5rem; 
+  text-shadow: none;
+}
+.top-head-text {
+  text-shadow: 1px 4px 1px black;
+    color: white;
+}
+.mouse-icon {
+  position: absolute;
+  /* top: 64%; */
+  left: 50%;
+  bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  height: 50px;
+  width: 30px;
+  margin-left: -17px;
+  display: block;
+  z-index: 10;
+}
+.mouse-icon .wheel {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 4px;
+  height: 10px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mouse-icon .wheel {
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+a { 
+color:  #2d2d37; 
+text-decoration: none; 
+}
+.hold-div {
+ 
+}
+.top-div {
+  width: 50%;
+}
+.text-div {
+  width: 25%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem; 
+}
+
+.bg-video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aboutMe {
+  background-size: contain;
+  background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: top;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0rem;
+  position: relative;
+}
+.about-title {
+  font-size: 3rem; 
+  margin-top: -3rem; 
+  text-shadow: 1px 1px 3px black;
+}
+.aboutRow {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+}
+
+.picDeMoi {
+    background: url(../images/itme.jpg);
+    background-size: cover;
+    height: 100%;
+}
+.cestMoi {
+  padding: 5rem;
+}
+.aboutMePara {
+  position: relative;
+  top: 2rem;
+}
+.aboutMePara p {
+  font-family: 'Roboto', sans-serif!important;
+  color: black;
+  padding: 1rem 4rem 0rem 4rem;
+  text-align: left;
+  column-count: 2;
+  line-height: 2;
+}
+.btn-primary {
+    margin-top: 3rem;
+}
+.mySkills {
+  background: white;
+    height: 100%;
+    background-size: cover;
+   background-repeat: no-repeat;
+   padding-bottom: 4rem;
+}
+.mySkills-title {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.mySkills-title h2 {
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px black;
+}
+.otherWork {
+    height: 100%;
+    background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.otherWorkRow {
+  height: 30rem;
+}
+.screen1 {
+background: url('../images/blog.png');
+height: 30rem;
+background-size: cover;
+background-position: center;
+}
+.screen2 {
+  background: url('../images/github-profile.png');
+height: 30rem;
+background-size: cover;
+background-position: center;
+}
+.screen3 {
+  background: url('../images/articlesfp.png');
+height: 30rem;
+background-size: cover;
+background-position: top;
+}
+.text {
+background: transparent; 
+ height: 30rem;
+ display: flex;
+ justify-content: center;
+ align-items: left;
+ flex-direction: column;
+ padding: 6rem;
+}
+.other-text {
+  padding: 4rem 4rem 0rem 4rem;
+  color: black;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+h6 {
+  text-align: center;
+  font-size: 2rem!important;
+  text-shadow: 1px 1px 3px black;
+}
+.little-div {
+  height: auto;
+  width: 30%;
+  margin: auto;
+}
+.check-btn {
+  color: rebeccapurple!important;
+  background-image: none;
+  background-color: white;
+  border-color: rebeccapurple!important;
+  width: 30%;
+  margin: auto;
+  padding: 1rem!important;
+  box-shadow: 2px 2px 5px rgb(112, 112, 112);
+}
+.check-btn:hover {
+  color: white!important;
+  background-color: rebeccapurple!important;
+  border-color: rebeccapurple!important;
+  box-shadow: 2px 1px 8px rgb(112, 112, 112);
+}
+.myProjects {
+    height: auto;
+}
+.myProjects-title {
+  display: flex;
+  justify-content: center;
+}
+.myProjects-title h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    color: black;
+    text-shadow: 1px 1px 3px black;
+}
+.project-row {
+  height: 21rem;
+}
+.proj1, .proj2, .proj3, .proj4, .proj5, .proj6, .proj7, .proj8 {
+  height: 20rem;
+  transition: 0.5s;
+}
+.proj1:hover, .proj2:hover, .proj3:hover, .proj4:hover, .proj5:hover, .proj6:hover, .proj7:hover, .proj8:hover {
+  transform: scale(1.15);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.hold-proj {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  border-left: 6px solid white;
+    border-right: 6px solid white;
+    border-bottom: 12px solid white;
+}
+.proj1{
+  background: url('../images/projects/le-chat-chat.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj2{
+  background: url('../images/projects/apple-fall-game.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj3{
+  background: url('../images/projects/racing-game.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj4{
+  background: url('../images/projects/viduals.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj5{
+  background: url('../images/projects/whack-the-mole.png');
+  background-size: cover;
+  background-position: center;
+}
+.proj6{
+  background: url('../images/projects/reactWeather.png');
+  background-size: cover;
+  background-position: top;
+}
+.proj7{
+  background: url('../images/projects/why-list-or-buy.png');
+  background-size: cover;
+  background-position: top;
+}
+.proj8{
+  background: url('../images/projects/miasf-org-join.png');
+  background-size: cover;
+  background-position: top;
+}
+.contactMe {
+  background-size: contain;
+  background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: top;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactMe-title h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem; 
+    color: black;
+    text-shadow: 1px 1px 3px black;
+}
+.contact-text {
+  padding: 0rem 4rem;
+  line-height: 2;
+  font-size: 1.1rem;
+}
+.hold-contact-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media {
+  margin-right: 3rem;
+}
+.fa-linkedin-in, .fa-envelope, .fa-github {
+  cursor: pointer;
+}
+.hold-contact-form {
+
+}
+#c-0-5 {  /*first-name*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-1-5 {  /*last-name*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-3-4 {  /*email-entry*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-4-3 {  /*phone-entry*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+#c-5-2 { /*text-area*/
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+}
+
+.left-head {
+   z-index: 9999; 
+   /* background: mediumpurple;    */
+   height: 100vh; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+footer {
+  height: 7rem;
+  background: lavender;
+  position: absolute;
+  width: 100%;
+}
+.footer-row {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+}
+
+.skills-bar-container{
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    top: 50%;
+    left: 46%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    list-style:none;
+}   
+li{
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+} 
+      .progressbar-title{
+        color: #000;
+        text-shadow: 1px 1px 3px black;
+      }   
+        h3{
+          display: inline-block;
+        }
+        .percent{
+          position: absolute;
+          right: 5px;
+        }
+      
+      
+      .bar-container{
+        background: rgb(112, 112, 112, .15);
+        position: relative;
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 5px;
+        display: block;
+        border-radius: 5px;
+      }
+        .progressbar{
+          position:absolute;
+          width:0%;
+          height: 100%;
+          border-radius: 5px;
+            
+          -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+        #progress-html.animate {
+          -webkit-animation-name: progress-html;
+          animation-name: progress-html;
+          -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+        }
+  
+        #progress-css.animate {
+          -webkit-animation-name: progress-css;
+          animation-name: progress-css;
+          -webkit-animation-delay: .7s*2;
+          animation-delay: .7s*2;
+        }
+  
+        #progress-javascript.animate {
+          -webkit-animation-name: progress-javascript;
+          animation-name: progress-javascript;
+          -webkit-animation-delay:.7s*3;
+          animation-delay: .7s*3;
+        }
+        #progress-ai.animate{
+          -webkit-animation-name: progress-ai;
+          animation-name: progress-ai;
+          -webkit-animation-delay: .7s*4;
+          animation-delay: .7s*4;
+        }
+         #progress-wordpress.animate{
+          -webkit-animation-name: progress-wordpress;
+          animation-name: progress-wordpress;
+          -webkit-animation-delay:.7s*5;
+          animation-delay: .7s*5;
+          }
+        #progress-mysql.animate{
+          -webkit-animation-name: progress-mysql;
+          animation-name: progress-mysql;
+          -webkit-animation-delay: .7s*6;
+          animation-delay: .7s*6;
+        }
+        #progress-php.animate{
+          -webkit-animation-name: progress-php;
+          animation-name: progress-php;
+          -webkit-animation-delay: .7s*7;
+          animation-delay: .7s*7;
+        }
+        #progress-react.animate{
+          -webkit-animation-name: progress-react;
+          animation-name: progress-react;
+          -webkit-animation-delay: .7s*8;
+          animation-delay: .7s*8;
+        }
+  
+  .progresshtml{background-color:rebeccapurple;}
+  .progresscss{background-color:rebeccapurple;}
+  .progressjs{background-color:rebeccapurple;}
+  .progressai{background-color:rebeccapurple;}
+  .progresswp{background-color:rebeccapurple;}
+  .progressmysql{background-color:rebeccapurple;}
+  .progressphp{background-color:rebeccapurple;}
+  .progressreact{background-color:rebeccapurple;}
+  
+  @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
+  @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+  @-webkit-keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
+  @-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
+  @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+  @-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
+  @-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
+  @-webkit-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
+  
+  @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
+  @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+  @-moz-keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
+  @-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
+  @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+  @-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
+  @-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
+  @-moz-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
+
+  @keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
+  @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+  @keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
+  @keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
+  @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+  @keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
+  @keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
+  @keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
+
+ 
+/*//////RESPONSIVE STYLES//////*/
+
+@media (max-width: 992px) {
+    .collapse {
+        display: none;
+    }
+}
+@media (min-width: 993px) {
+    .collapse {
+        display: inline-block;
+    }
+}
+
+/*///////iPad Portrait and Landscape///////*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .headerText {
+      position: relative;
+      /* top: -25%; */
+    }
+    .left-head {
+      height: 42.5vh!important;
+  }
+}
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+  .mobile-menu-trigger {
+    left: 85%;
+  }
+  .headerText {
+    position: relative;
+    /* top: -7%; */
+    /* left: 7%; */
+  }
+  .pageHeader {
+    height: 75vh;
+  }
+  .left-head {
+    height: 75vh;
+  }
+  .other-text {
+    padding: 1rem 4rem 0rem 4rem;
+  }
+  .contactMe {
+    height: 80vh;
+  }
+  .contactMe-title h2 {
+    margin-top: 0rem;
+  }
+}
+
+/*/////////iPad Pro Portrait and Landscape/////*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait){
+    .mobile-menu-trigger {
+      left: 85%;
+    }
+    .headerText {
+      display: contents;
+      position: relative;
+      top: -25%;
+      left: 7%;
+    }
+    .pageHeader {
+      height: 36rem;
+    }
+    .left-head {
+      height: 42vh;
+    }
+    .aboutMe {
+      height: 64vh;
+    }
+    .mySkills {
+      height: 65vh;
+    }
+    .mySkills-title {
+      padding-top: 6rem;
+    }
+    .skills-bar-container {
+      left: 46%;
+    }
+    .other-text {
+      padding: 1rem 4rem 0rem 4rem;
+    }
+    .myProjects {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .contactMe {
+      height: 50vh;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: landscape){
+    .pageHeader {
+      height: 75vh;
+    }
+    .left-head {
+      height: 75vh;
+    }
+    .aboutMe {
+      height: 75vh;
+    }
+    .mySkills {
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .skills-bar-container {
+      left: 46%;
+    }
+    .myProjects {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .contactMe {
+      height: 70vh;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .menu-ham {
+      font-size: .75rem;
+      left: 41rem;
+    }
+    .link-name {
+      padding-left: 1rem;
+    }
+    #mobile-first-nav .nav-link {
+      font-size: 1.5rem;
+    }
+    .navbar-nav {
+      background: none;
+      padding: 0rem 2rem!important;
+    }
+    .top-head-text {
+      /* top: -15rem; */
+    }
+    .left-head {
+      height: 44vh;
+    }
+    .headerText h1 {
+      font-size: 2.5rem;
+      position: relative;
+      /* top: -15rem; */
+    }
+    .pageHeader {
+      height: 27rem;
+    }
+    .aboutMe {
+      height: 70vh;
+      background-attachment: initial;
+    }
+
+    .aboutMe .container-fluid {
+      height: 62%;
+    }
+    .about-title {
+      font-size: 3rem;
+      /* margin-top: 6rem; */
+    }
+    .aboutMePara p {
+      padding: 1rem 1rem 0rem 1rem;
+      text-align: left;
+      column-count: auto;
+      line-height: 1.75;
+    }
+    .mySkills {
+      margin-top: 3rem;
+    }
+  .mySkills-title h2 {
+      font-size: 3rem;
+  }
+    .aboutRow {
+      height: auto;
+      margin-top: 0rem;
+  }
+  .otherWorkRow {
+    height: auto;
+  }
+  .other-text {
+    padding: 2rem 1rem 0rem 1rem;
+    line-height: 1.75;
+  }
+  .check-btn {
+    width: auto;
+  }
+  .project-row {
+    height: auto;
+  }
+  .myProjects-title h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  .contactMe {
+    height: 70vh;
+  }
+  .contactMe-title h2 {
+    font-size: 3rem;
+  }
+  .contact-text {
+    padding: 0rem 1rem;
+  }
+  .social-media {
+    margin-right: 1rem;
+  }
+  .skills-bar-container {
+    left: 47%;
+  }
+  .footer-row {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+   
+    .menu-ham {
+        font-size: .75rem;
+        left: 72%;
+    }
+    .link-name {
+      padding-left: 1rem;
+    }
+    #mobile-first-nav .nav-link {
+      font-size: 1.5rem;
+    }
+    .navbar-nav {
+      background: none;
+      padding: 0rem 2rem!important;
+    }
+    .headerText h1 {
+      font-size: 2.5rem;
+      top: 0rem!important;
+    }
+    .topGreeting {
+      font-size: 1rem; 
+      text-shadow: none;
+    }
+    .pageHeader {
+      height: 30rem;
+      background: url(../images/mobile-header.png);
+      background-size: cover;
+      background-position: bottom;
+    }
+    .left-head {
+      height: 100vh;
+    }
+    .pageHeader {
+      height: 100vh; 
+    }
+    .bg-video {
+      display: none;
+    }
+    .aboutMe {
+      height: auto;
+      background-attachment: initial;
+    }
+    .about-title {
+      font-size: 3rem;
+      margin-top: 6rem;
+    }
+    .aboutMePara p {
+      padding: 1rem 1rem 0rem 1rem;
+      text-align: left;
+      column-count: auto;
+      line-height: 1.75;
+    }
+  .mySkills-title h2 {
+      font-size: 3rem;
+  }
+    .aboutRow {
+      height: auto;
+      margin-top: 0rem;
+  }
+  .otherWorkRow {
+    height: auto;
+  }
+  .other-text {
+    padding: 2rem 1rem 0rem 1rem;
+    line-height: 1.75;
+  }
+  .check-btn {
+    width: auto;
+  }
+  .project-row {
+    height: auto;
+  }
+  .myProjects-title h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  .contactMe {
+    height: auto;
+  }
+  .contactMe-title h2 {
+    font-size: 3rem;
+  }
+  .contact-text {
+    padding: 0rem 1rem;
+  }
+  .social-media {
+    margin-right: 1rem;
+  }
+  .skills-bar-container {
+    left: 43%;
+  }
+  .footer-row {
+    padding: 2rem;
+  }
+}
+
+@media screen 
+and (min-device-width: 500px) 
+and (max-device-width: 767px) {
+  .left-head {
+    height: 100vh;
+  }
+  .pageHeader {
+    height: 100vh;
+  }
+  .aboutMe {
+    height: 45rem;
+    /* background-attachment: initial; */
+  }
+  .aboutMe .container-fluid {
+    height: 100%;
+  }
+}
+@media screen 
+and (min-device-width: 800px) 
+and (max-device-width: 991px) {
+  .left-head {
+    height: 100vh;
+  }
+  .pageHeader {
+    height: 100vh;
+  }
+  .mobile-menu-trigger {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    left: 83%;
+    margin-top: 1.25rem;
+    cursor: pointer;
+  }
+  .aboutMe {
+    height: 47rem;
+  }
+  .aboutMePara p {
+    column-count: auto;
+  }
+  .otherWorkRow {
+    height: auto;
+  }
+  .myProjects {
+    height: auto;
+  }
+  .contactMe {
+    height: auto;
+  }
+  .project-row {
+    height: auto;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  /* .mySkills {
+    margin-top: 6rem;
+  } */
+  .aboutMe {
+    padding-bottom: 9rem;
+  }
+}
+
+
