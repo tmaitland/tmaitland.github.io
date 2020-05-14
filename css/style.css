@@ -405,17 +405,17 @@ h6 {
   background-position: center;
 }
 .proj2{
-  background: url('../images/projects/apple-fall-game.png');
+  background: url('../images/projects/reactWeather.png');
   background-size: cover;
   background-position: center;
 }
 .proj3{
-  background: url('../images/projects/racing-game.png');
+  background: url('../images/projects/viduals.png');
   background-size: cover;
   background-position: center;
 }
 .proj4{
-  background: url('../images/projects/viduals.png');
+  background: url('../images/projects/40MTrialAvyachts.png');
   background-size: cover;
   background-position: center;
 }
@@ -425,7 +425,7 @@ h6 {
   background-position: center;
 }
 .proj6{
-  background: url('../images/projects/reactWeather.png');
+  background: url('../images/projects/rossyachtsales.png');
   background-size: cover;
   background-position: top;
 }
