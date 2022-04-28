@@ -16,41 +16,38 @@
 </head>
 
 <body>
-        <div class="mobile-menu-trigger">
-            <span class="menu-ham"><i class="fas fa-bars"></i>&nbsp;&nbsp;MENU</span>
-        </div>
+    <div class="mobile-menu-trigger">
+        <span class="menu-ham"><i class="fas fa-bars"></i>&nbsp;&nbsp;MENU</span>
+    </div>
                             
-                            <aside id="mobile-menu">
-                                <nav id="mobile-first-nav">		
-                                    <div class="close-menu">
-                                        <p><i class="fas fa-times"></i></p>
-                                    </div>
-                                    
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" data-page-class="home" href="#top"><i class="fa fa-home"></i><span class="link-name">Home</span> <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#aboutMe"><i class="fas fa-user-circle"></i><span class="link-name">About Me</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#mySkills"><i class="fas fa-user-edit"></i><span class="link-name">My Skills</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#otherWork"><i class="fas fa-briefcase"></i><span class="link-name">My Work</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="#myProjects"><i class="fas fa-folder-open"></i><span class="link-name">Recent Projects</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="#contactMe"><i class="fas fa-address-card"></i><span class="link-name">Contact Me</span></a>
-                                        </li>
-                                    </ul>
-                                  
-                                    
-                                
-                        </nav>
-                    </aside>	
+    <aside id="mobile-menu">
+        <nav id="mobile-first-nav">		
+            <div class="close-menu">
+                <p><i class="fas fa-times"></i></p>
+            </div>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" data-page-class="home" href="#top"><i class="fa fa-home"></i><span class="link-name">Home</span> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe"><i class="fas fa-user-circle"></i><span class="link-name">About Me</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mySkills"><i class="fas fa-user-edit"></i><span class="link-name">My Skills</span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#myProjects"><i class="fas fa-folder-open"></i><span class="link-name">Projects</span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#contactMe"><i class="fas fa-address-card"></i><span class="link-name">Contact Me</span></a>
+                </li>
+            </ul>
+                    
+                    
+                
+        </nav>
+    </aside>	
 
     <div class="page portfolio">
         <section class="pageHeader" id="top">
@@ -79,20 +76,22 @@
                     <!-- <div class="col-lg-5 col-md-12 right-head">
                     </div> -->
                     <div class="gradient"></div> <!--over the header video-->
-                </div>
-                    <video muted playsinline webkit-playsinline autoplay loop class="bg-video">
-                        <source type="video/mp4" src="./videos/hands-typing.mp4" />
-                        <source type="video/ogg" src="./videos/hands-typing.ogg" />
-                        <source type="video/webm" src="./videos/hands-typing.webm" />
+                    <video width="100%" height="auto" muted playsinline webkit-playsinline autoplay loop class="bg-video">
+                        <source type="video/mp4" src="./videos/flowerbgvid.mp4" />
+                        <source type="video/webm" src="./videos/flowerbgvid.webm" />
+                        <source type="video/wmv" src="./videos/flowerbgvid.wmv" />
+                        <source type="video/mov" src="./videos/flowerbgvid.mov" />
+                        <source type="video/avi" src="./videos/flowerbgvid.avi" />
                     </video>
                     <div class="mouse-icon">
                             <div class="wheel"></div>
                     </div>
+                </div>
             </div>
         </section>
         <section class="aboutMe" id="aboutMe" data-paroller-factor="0.3" data-paroller-type="background"
             data-paroller-direction="vertical">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row aboutRow">
                     <div class="col-lg-12" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                         data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
@@ -122,7 +121,7 @@
             </div>
         </section>
         <section class="mySkills" id="mySkills">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12 mySkills-title" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                         data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
@@ -131,6 +130,7 @@
                         <div class="hold-div">
                             <img src="./images/nice-div.png" alt="text divider for headings" class="text-div" />
                         </div>
+                        <p class="section-blurb">This is where text about my skills will go.</p>
                     </div>
                         <div class="col-lg-6 col-md-12">
                             <ul class="skills-bar-container">
@@ -155,11 +155,11 @@
 
                                     <li>
                                         <div class="progressbar-title">
-                                            <h3>Adobe Illustrator</h3>
-                                            <span class="percent" id="ai-pourcent"></span>
+                                            <h3>Web Design</h3>
+                                            <span class="percent" id="webdesign-pourcent"></span>
                                         </div>
                                         <div class="bar-container">
-                                            <span class="progressbar progressai" id="progress-ai"></span>
+                                            <span class="progressbar progresswebdesign" id="progress-webdesign"></span>
                                         </div>
                                     </li>
         
@@ -188,15 +188,6 @@
             
                                     <li>
                                         <div class="progressbar-title">
-                                            <h3>PHP</h3>
-                                            <span class="percent" id="php-pourcent"></span>
-                                        </div>
-                                        <div class="bar-container">
-                                            <span class="progressbar progressphp" id="progress-php"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="progressbar-title">
                                             <h3>ReactJS</h3>
                                             <span class="percent" id="react-pourcent"></span>
                                         </div>
@@ -204,7 +195,15 @@
                                             <span class="progressbar progressreact" id="progress-react"></span>
                                         </div>
                                     </li>
-        
+                                    <li>
+                                        <div class="progressbar-title">
+                                            <h3>PHP</h3>
+                                            <span class="percent" id="php-pourcent"></span>
+                                        </div>
+                                        <div class="bar-container">
+                                            <span class="progressbar progressphp" id="progress-php"></span>
+                                        </div>
+                                    </li>
                                     <li>
                                         <div class="progressbar-title">
                                             <h3>MySQL</h3>
@@ -227,102 +226,23 @@
             </div>
             <!-- <div class="overlay" style="background-image: linear-gradient(rgb(105,56,92,.5), rgb(51,154,240,.99));"></div> -->
         </section>
-        <section class="otherWork" id="otherWork">
-            <div class="container-fluid">
-                <!--<div class="row otherWorkRow">
-                    <div class="col-lg-6 col-md-12 screen1" data-aos="fade-in" data-aos-offset="200" data-aos-delay="0"
-                    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                    data-aos-once="false">
-
-                    </div>
-                    <div class="col-lg-6 col-md-12 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="0"
-                    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                    data-aos-once="false">
-                        <h6>Blogger</h6>
-                        <img src="./images/nice-div.png" alt="text divider for headings" class="little-div" />
-                        <p class="other-text">On my blog, I mainly focus on the tech field, but I discuss a variety of
-                            topics, including
-                            education, history, and current events. You should definitely check it out to see what
-                            I'm up to now!</p>
-                        <br>
-                        <a href="http://tmaitland.techlaunch.online/tonitech/" target="_blank"
-                            class="btn btn-outline-primary check-btn">Check it
-                            out!</a>
-                    </div>
-                </div>-->
-                <div class="row otherWorkRow">
-                    <div class="col-lg-6 col-md-12 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
-                    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                    data-aos-once="false">
-                        <h6>Active on Github</h6>
-                        <img src="./images/nice-div.png" alt="text divider for headings" class="little-div" />
-                        <!-- Headline -->
-                        <p class="other-text">In order to get a good look at how I've progressed from an absolute
-                            beginner until now, check out my
-                            Github! There's quite a few repositories of projects and assignments that are a
-                            good indicator of how passionate I am about learning new ways to problem solve using code.
-                        </p>
-                        <br>
-                        <!-- About Text 2 -->
-                        <a href="https://github.com/tmaitland" target="_blank"
-                            class="btn btn-outline-primary check-btn">Check
-                            it out!</a>
-                        <!--read more button-->
-                    </div>
-                    <div class="col-lg-6 col-md-12 screen2" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
-                    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                    data-aos-once="false">
-
-                    </div>
-                </div>
-                <div class="row otherWorkRow">
-                    <div class="col-lg-6 col-md-12 screen3" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
-                    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                    data-aos-once="false">
-
-                    </div>
-                    <div class="col-lg-6 col-md-12 text" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
-                    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                    data-aos-once="false">
-                        <h6>Publications</h6>
-                        <img src="./images/nice-div.png" alt="text divider for headings" class="little-div" />
-                        <!-- Headline-->
-                        <p class="other-text">While studying at UF, I got the opportunity to contribute to <em>The Fine
-                                Print</em>, a student-run,
-                            independent publication in Gainesville, Florida. One of the articles I wrote focused on
-                            Nelson
-                            Mandela's passing in 2013 and the other on the office space of one of my favorite
-                            professors. I
-                            even did a few illustrations for them, including <a
-                                href="http://thefineprintmag.org/behind-books-behind-bars-dream-defenders/"
-                                target="_blank">this one.</a></p>
-                        <br>
-                        <!-- About Text 3 -->
-                        <a href="http://thefineprintmag.org/author/toni-lee-maitland/" target="_blank"
-                            class="btn btn-outline-primary check-btn">Check
-                            it out!</a>
-                        <!--read more button-->
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
+      
         <section class="myProjects" id="myProjects">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row myProjects-title" data-aos="fade-in" data-aos-offset="200" data-aos-delay="10"
                 data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                 data-aos-once="false">
-                    <h2>Recent Projects</h2>
+                    <h2>Projects</h2>
                     <div class="hold-div">
                         <img src="./images/nice-div.png" alt="text divider for headings" class="text-div" />
                     </div>
+                    <p class="section-blurb">This is where text about these projects will go</p>
                 </div>
                 <div class="row project-row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
                 data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
                 data-aos-once="false">
-                   <div class="col-lg-4 col-md-12 hold-proj">
-                     <a href="https://tmaitland.github.io/le-chat-chat/public/index.html" target="_blank">
+                   <div class="col-lg-6 col-md-12 hold-proj">
+                     <a href="" target="_blank">
                         <div class="card">
                             <div class="image">
                                 <div class="proj1">
@@ -331,8 +251,22 @@
                             </div>
                         </div></a>
                     </div>
-                    <div class="col-lg-4 col-md-12 hold-proj">
-                        <a href="https://tmaitland.github.io/apple-pick-game/" target="_blank">
+                    <div class="col-lg-6 col-md-12 hold-proj-text">
+                        <div class="card">
+                           <p>Text goes here </p>
+                        </div>
+                    </div>
+               </div>
+               <div class="row project-row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-once="false">
+                    <div class="col-lg-6 col-md-12 hold-proj-text">
+                        <div class="card">
+                            <p>Text goes here </p>
+                         </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 hold-proj">
+                      <a href="https://react-openweather-app.herokuapp.com/" target="_blank">
                         <div class="card">
                             <div class="image">
                                 <div class="proj2">
@@ -341,8 +275,12 @@
                             </div>
                         </div></a>
                     </div>
-                    <div class="col-lg-4 col-md-12 hold-proj">
-                        <a href="https://tmaitland.github.io/bird-race-game/" target="_blank">
+                </div>
+               <div class="row project-row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                data-aos-once="false">
+                    <div class="col-lg-6 col-md-12 hold-proj">
+                        <a href="https://react-openweather-app.herokuapp.com/" target="_blank">
                         <div class="card">
                             <div class="image">
                                 <div class="proj3">
@@ -350,68 +288,19 @@
                                 </div>
                             </div>
                         </div></a>
-                    </div>
-                    <!-- <div class="col-lg-3 col-md-12 hold-proj">
-                        <a href="http://tmaitland.techlaunch.online/projects/video/video.html" target="_blank">
+                    </div>                   
+                    <div class="col-lg-6 col-md-12 hold-proj-text">
                         <div class="card">
-                            <div class="image">
-                                <div class="proj4">
-
-                                </div>
-                            </div>
-                        </div></a>
-                    </div> -->
-                </div>
-
-               <div class="row project-row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
-                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
-                data-aos-once="false">
-                    <!-- <div class="col-lg-3 col-md-12 hold-proj">
-                        <a href="http://tmaitland.techlaunch.online/projects/whack-the-mole/" target="_blank">
-                            <div class="card">
-                            <div class="image">
-                                <div class="proj5">
-
-                                </div>
-                            </div>
-                        </div></a>
-                    </div> -->
-                    <div class="col-lg-4 col-md-12 hold-proj">
-                      <a href="https://react-openweather-app.herokuapp.com/" target="_blank">
-                        <div class="card">
-                            <div class="image">
-                                <div class="proj6">
-
-                                </div>
-                            </div>
-                        </div></a>
+                            <p>Text goes here </p>
+                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 hold-proj">
-                      <a href="https://www.richardbertramyachts.com/why-list-or-buy" target="_blank">
-                        <div class="card">
-                            <div class="image">
-                                <div class="proj7">
-
-                                </div>
-                            </div>
-                        </div></a>
-                    </div>
-                    <div class="col-lg-4 col-md-12 hold-proj">
-                      <a href="https://www.miasf.org/membership" target="_blank">
-                        <div class="card">
-                            <div class="image">
-                                <div class="proj8">
-
-                                </div>
-                            </div>
-                        </div></a>
-                    </div>
+                    
                 </div>
             </div>
 
         </section>
         <section class="contactMe" id="contactMe">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 contactMe-title">
                         <h2>Contact Me</h2>
@@ -444,7 +333,7 @@
     <footer>
         <div class="container">
             <div class="row footer-row">
-                 &copy; 2019 - All Rights Reserved - Designed and Developed by Toni-Lee Maitland
+                 &copy;&nbsp;<span class="year font-weight-bold"></span> &nbsp;-&nbsp; <span class="">All Rights Reserved - Designed and Developed by Toni-Lee Maitland</span>
             </div>
 
         </div>
@@ -470,22 +359,22 @@
     $(window).on('scroll', function (e) {
         var top = $(window).scrollTop() + $(window).height(),
             isVisible = top > $('#progress-html, #progress-css, #progress-javascript').offset().top;
-        isVisible = top > $(' #progress-ai, #progress-wordpress, #progress-mysql, #progress-php, #progress-react').offset().top;
+        isVisible = top > $(' #progress-webdesign, #progress-wordpress, #progress-mysql, #progress-php, #progress-react').offset().top;
 
         $('#progress-html, #progress-css, #progress-javascript').toggleClass('animate', isVisible);
-        $('#progress-ai, #progress-wordpress, #progress-mysql, #progress-php, #progress-react').toggleClass('animate', isVisible);
+        $('#progress-webdesign, #progress-wordpress, #progress-mysql, #progress-php, #progress-react').toggleClass('animate', isVisible);
     });
 </script>
 <script>
     var lang = {
         "html": "95%",
         "css": "90%",
-        "ai": "80%",
-        "wordpress": "78%",
-        "javascript": "75%",
-        "php": "75%",
-        "react": "70%",
-        "mysql": "65%"
+        "webdesign": "80%",
+        "wordpress": "75%",
+        "javascript": "70%",
+        "react": "65%",
+        "php": "60%",
+        "mysql": "55%"
     };
 
     var multiply = 4;
@@ -525,5 +414,11 @@
 			var win = window.open(url, '_blank');
 			win.focus();
 		}
+
+        var containYear = document.querySelector(".year");
+        var date = new Date();
+        var year = date.getFullYear();
+        containYear.textContent = year;
+
      </script>
 </html>

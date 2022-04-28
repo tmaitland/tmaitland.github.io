@@ -10,7 +10,7 @@ p {
     font-size: 1.25rem;
 }
 #mobile-menu {
-  background-color: aliceblue;
+  background-color: rgb(219,226,233);
   /* padding: 0rem 1rem 0rem 0rem; */
   width: 100%;
   height: 100%;
@@ -20,8 +20,8 @@ p {
   z-index: 999999;
   overflow-x: hidden;
   box-shadow: 1px 2px 27px black;
-  border-left: 5px solid rebeccapurple;
-  border-right: 5px solid rebeccapurple;
+  border-left: 5px solid rgb(102, 51, 153);
+  border-right: 5px solid rgb(102, 51, 153);
   overflow-y: scroll;
 }
 .menu-ham {
@@ -43,12 +43,12 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: aliceblue;
+  background: rgb(219,226,233);
   height: 100%;
 }
 #mobile-first-nav .nav-link {
   display: block;
-    color: rebeccapurple;
+    color: rgb(102, 51, 153);
     transition: .3s;
     font-family: 'Fredericka the Great', cursive!important;
     text-shadow: 1px 1px 3px rgb(0,0,0,.5);
@@ -69,7 +69,7 @@ p {
 } */
 
 .close-menu {
-  color: rebeccapurple;
+  color: rgb(102, 51, 153);
   width: 100%;
   transition: .3s;
   text-shadow: 1px 1px 3px rgb(0,0,0,.5);
@@ -103,8 +103,13 @@ p {
     cursor: pointer;
 	}
 
-.pageHeader { 
+/* .pageHeader { 
     height: 100vh;
+} */
+.pageHeader { 
+  overflow: hidden;
+  background-position: cover;
+  background-attachment: fixed;
 }
 .gradient {
   background-image: linear-gradient(rgb(0,0,0,0.25), rgb(0,0,0,0.75));
@@ -207,22 +212,30 @@ text-decoration: none;
   width: 50%;
 }
 .text-div {
-  width: 25%;
+  width: 18%;
   display: block;
   margin: auto;
   margin-bottom: 2rem; 
 }
 
 .bg-video {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .aboutMe {
   background-size: contain;
-  background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+  background: linear-gradient(rgb(178,164,212,.85), rgb(219,226,233, .90)), url(../images/Miami_skyline_south-min.jpg);
   height: 100vh;
   background-attachment: fixed;
   display: flex;
@@ -267,23 +280,27 @@ text-decoration: none;
   color: black;
   padding: 1rem 4rem 0rem 4rem;
   text-align: left;
-  column-count: 2;
   line-height: 2;
 }
 .btn-primary {
     margin-top: 3rem;
 }
 .mySkills {
-  background: white;
-    height: 100%;
+  background: rgb(219,226,233);
+    height: 100vh;
     background-size: cover;
    background-repeat: no-repeat;
-   padding-bottom: 4rem;
+   display: flex;
 }
+.mySkills .container {
+  display: flex;
+  align-items: center;
+}
+
 .mySkills-title {
   display: flex;
   justify-content: center;
-  background: white;
+  background: rgb(219,226,233);
   padding-top: 2rem;
   flex-direction: column;
   align-items: center;
@@ -294,76 +311,37 @@ text-decoration: none;
     text-transform: uppercase;
     text-shadow: 1px 1px 3px black;
 }
-.otherWork {
-    height: 100%;
-    background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+.mySkills-title .section-blurb {
+  margin-bottom: 2.5rem;
 }
-.otherWorkRow {
-  height: 30rem;
-}
-.screen1 {
-background: url('../images/blog.png');
-height: 30rem;
-background-size: cover;
-background-position: center;
-}
-.screen2 {
-  background: url('../images/github-profile.png');
-height: 30rem;
-background-size: cover;
-background-position: center;
-}
-.screen3 {
-  background: url('../images/articlesfp.png');
-height: 30rem;
-background-size: cover;
-background-position: top;
-}
-.text {
-background: transparent; 
- height: 30rem;
- display: flex;
- justify-content: center;
- align-items: left;
- flex-direction: column;
- padding: 6rem;
-}
-.other-text {
-  padding: 4rem 4rem 0rem 4rem;
-  color: black;
-  font-size: 1.05rem;
-  line-height: 2;
-}
-h6 {
-  text-align: center;
-  font-size: 2rem!important;
-  text-shadow: 1px 1px 3px black;
-}
+
 .little-div {
   height: auto;
   width: 30%;
   margin: auto;
 }
 .check-btn {
-  color: rebeccapurple!important;
+  color: white!important;
+  font-weight: 600!important;
   background-image: none;
-  background-color: white;
-  border-color: rebeccapurple!important;
+  background-color: rgb(102, 51, 153)!important;
+  border-color: rgb(102, 51, 153)!important;
   width: 30%;
   margin: auto;
   padding: 1rem!important;
   box-shadow: 2px 2px 5px rgb(112, 112, 112);
 }
 .check-btn:hover {
-  color: white!important;
-  background-color: rebeccapurple!important;
-  border-color: rebeccapurple!important;
+  color: rgb(102, 51, 153)!important;
+  font-weight: 600!important;
+  background-color: transparent!important;
+  border-color: rgb(102, 51, 153)!important;
   box-shadow: 2px 1px 8px rgb(112, 112, 112);
 }
 .myProjects {
     height: auto;
+    background: rgb(219,226,233);
+    padding-bottom: 3.5rem;
 }
 .myProjects-title {
   display: flex;
@@ -377,14 +355,18 @@ h6 {
     color: black;
     text-shadow: 1px 1px 3px black;
 }
+
+.myProjects-title .section-blurb {
+  margin-bottom: 2.5rem;
+}
 .project-row {
   height: 21rem;
 }
-.proj1, .proj2, .proj3, .proj4, .proj5, .proj6, .proj7, .proj8 {
+.proj1, .proj2, .proj3 {
   height: 20rem;
   transition: 0.5s;
 }
-.proj1:hover, .proj2:hover, .proj3:hover, .proj4:hover, .proj5:hover, .proj6:hover, .proj7:hover, .proj8:hover {
+.proj1:hover, .proj2:hover, .proj3:hover {
   transform: scale(1.15);
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -400,48 +382,24 @@ h6 {
     border-bottom: 12px solid white;
 }
 .proj1{
-  background: url('../images/projects/le-chat-chat.png');
+  background: url('../images/projects/ai-ufl.png');
   background-size: cover;
   background-position: center;
 }
 .proj2{
-  background: url('../images/projects/apple-fall-game.png');
+  background: url('../images/projects/experts-ufl.png');
   background-size: cover;
   background-position: center;
 }
 .proj3{
-  background: url('../images/projects/racing-game.png');
-  background-size: cover;
-  background-position: center;
-}
-.proj4{
-  background: url('../images/projects/viduals.png');
-  background-size: cover;
-  background-position: center;
-}
-.proj5{
-  background: url('../images/projects/whack-the-mole.png');
-  background-size: cover;
-  background-position: center;
-}
-.proj6{
   background: url('../images/projects/reactWeather.png');
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
-.proj7{
-  background: url('../images/projects/why-list-or-buy.png');
-  background-size: cover;
-  background-position: top;
-}
-.proj8{
-  background: url('../images/projects/miasf-org-join.png');
-  background-size: cover;
-  background-position: top;
-}
+
 .contactMe {
   background-size: contain;
-  background: linear-gradient(rgb(255,255,255,.90), rgb(255,255,255,.99)), url(../images/estamoi.jpg);
+  background: linear-gradient(rgb(178,164,212,.85), rgb(219,226,233, .90)), url(../images/Miami_skyline_south-min.jpg);
   height: 100vh;
   background-attachment: fixed;
   display: flex;
@@ -481,23 +439,23 @@ h6 {
 
 }
 #c-0-5 {  /*first-name*/
-  border: 1px solid rebeccapurple;
+  border: 1px solid rgb(102, 51, 153);
   padding: 1rem;
 }
 #c-1-5 {  /*last-name*/
-  border: 1px solid rebeccapurple;
+  border: 1px solid rgb(102, 51, 153);
   padding: 1rem;
 }
 #c-3-4 {  /*email-entry*/
-  border: 1px solid rebeccapurple;
+  border: 1px solid rgb(102, 51, 153);
   padding: 1rem;
 }
 #c-4-3 {  /*phone-entry*/
-  border: 1px solid rebeccapurple;
+  border: 1px solid rgb(102, 51, 153);
   padding: 1rem;
 }
 #c-5-2 { /*text-area*/
-  border: 1px solid rebeccapurple;
+  border: 1px solid rgb(102, 51, 153);
   padding: 1rem;
 }
 
@@ -512,7 +470,7 @@ h6 {
 }
 footer {
   height: 7rem;
-  background: lavender;
+  background: rgb(178,164,212);
   position: absolute;
   width: 100%;
 }
@@ -539,127 +497,125 @@ li{
     padding: 5px;
     margin-bottom: 10px;
 } 
-      .progressbar-title{
-        color: #000;
-        text-shadow: 1px 1px 3px black;
-      }   
-        h3{
-          display: inline-block;
-        }
-        .percent{
-          position: absolute;
-          right: 5px;
-        }
+.progressbar-title{
+  color: #000;
+  text-shadow: 1px 1px 3px black;
+}   
+h3{
+  display: inline-block;
+}
+.percent{
+  position: absolute;
+  right: 5px;
+}
+.bar-container{
+  background-color: rgba(99, 108, 114, 0.5);
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 5px;
+  display: block;
+  border-radius: 5px;
+}
+  .progressbar{
+    position:absolute;
+    width:0%;
+    height: 100%;
+    border-radius: 5px;
       
-      
-      .bar-container{
-        background: rgb(112, 112, 112, .15);
-        position: relative;
-        width: 100%;
-        height: 2.5rem;
-        margin-top: 5px;
-        display: block;
-        border-radius: 5px;
-      }
-        .progressbar{
-          position:absolute;
-          width:0%;
-          height: 100%;
-          border-radius: 5px;
-            
-          -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-          -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-          -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-        }
-        #progress-html.animate {
-          -webkit-animation-name: progress-html;
-          animation-name: progress-html;
-          -webkit-animation-delay: .7s;
-          animation-delay: .7s;
-        }
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  #progress-html.animate {
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+  }
+
+  #progress-css.animate {
+    -webkit-animation-name: progress-css;
+    animation-name: progress-css;
+    -webkit-animation-delay: .7s*2;
+    animation-delay: .7s*2;
+  }
+
+  #progress-javascript.animate {
+    -webkit-animation-name: progress-javascript;
+    animation-name: progress-javascript;
+    -webkit-animation-delay:.7s*3;
+    animation-delay: .7s*3;
+  }
+  #progress-webdesign.animate{
+    -webkit-animation-name: progress-webdesign;
+    animation-name: progress-webdesign;
+    -webkit-animation-delay: .7s*4;
+    animation-delay: .7s*4;
+  }
+    #progress-wordpress.animate{
+    -webkit-animation-name: progress-wordpress;
+    animation-name: progress-wordpress;
+    -webkit-animation-delay:.7s*5;
+    animation-delay: .7s*5;
+    }
+  #progress-mysql.animate{
+    -webkit-animation-name: progress-mysql;
+    animation-name: progress-mysql;
+    -webkit-animation-delay: .7s*6;
+    animation-delay: .7s*6;
+  }
+  #progress-php.animate{
+    -webkit-animation-name: progress-php;
+    animation-name: progress-php;
+    -webkit-animation-delay: .7s*7;
+    animation-delay: .7s*7;
+  }
+  #progress-react.animate{
+    -webkit-animation-name: progress-react;
+    animation-name: progress-react;
+    -webkit-animation-delay: .7s*8;
+    animation-delay: .7s*8;
+  }
   
-        #progress-css.animate {
-          -webkit-animation-name: progress-css;
-          animation-name: progress-css;
-          -webkit-animation-delay: .7s*2;
-          animation-delay: .7s*2;
-        }
-  
-        #progress-javascript.animate {
-          -webkit-animation-name: progress-javascript;
-          animation-name: progress-javascript;
-          -webkit-animation-delay:.7s*3;
-          animation-delay: .7s*3;
-        }
-        #progress-ai.animate{
-          -webkit-animation-name: progress-ai;
-          animation-name: progress-ai;
-          -webkit-animation-delay: .7s*4;
-          animation-delay: .7s*4;
-        }
-         #progress-wordpress.animate{
-          -webkit-animation-name: progress-wordpress;
-          animation-name: progress-wordpress;
-          -webkit-animation-delay:.7s*5;
-          animation-delay: .7s*5;
-          }
-        #progress-mysql.animate{
-          -webkit-animation-name: progress-mysql;
-          animation-name: progress-mysql;
-          -webkit-animation-delay: .7s*6;
-          animation-delay: .7s*6;
-        }
-        #progress-php.animate{
-          -webkit-animation-name: progress-php;
-          animation-name: progress-php;
-          -webkit-animation-delay: .7s*7;
-          animation-delay: .7s*7;
-        }
-        #progress-react.animate{
-          -webkit-animation-name: progress-react;
-          animation-name: progress-react;
-          -webkit-animation-delay: .7s*8;
-          animation-delay: .7s*8;
-        }
-  
-  .progresshtml{background-color:rebeccapurple;}
-  .progresscss{background-color:rebeccapurple;}
-  .progressjs{background-color:rebeccapurple;}
-  .progressai{background-color:rebeccapurple;}
-  .progresswp{background-color:rebeccapurple;}
-  .progressmysql{background-color:rebeccapurple;}
-  .progressphp{background-color:rebeccapurple;}
-  .progressreact{background-color:rebeccapurple;}
+  .progresshtml{background-color:rgb(102, 51, 153);}
+  .progresscss{background-color:rgb(102, 51, 153);}
+  .progressjs{background-color:rgb(102, 51, 153);}
+  .progresswebdesign{background-color:rgb(102, 51, 153);}
+  .progresswp{background-color:rgb(102, 51, 153);}
+  .progressmysql{background-color:rgb(102, 51, 153);}
+  .progressphp{background-color:rgb(102, 51, 153);}
+  .progressreact{background-color:rgb(102, 51, 153);}
   
   @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
   @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-  @-webkit-keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
-  @-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
-  @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-  @-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
-  @-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
-  @-webkit-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
+  @-webkit-keyframes progress-webdesign{0%{width: 0%;} 100%{ width: 80%;}}
+  @-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 75%;}}
+  @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
+  @-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
+  @-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 60%;}}
+  @-webkit-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 55%;}}
   
   @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
   @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-  @-moz-keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
-  @-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
-  @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-  @-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
-  @-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
-  @-moz-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
+  @-moz-keyframes progress-webdesign{0%{width: 0%;} 100%{ width: 80%;}}
+  @-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 75%;}}
+  @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
+  @-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
+  @-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 60%;}}
+  @-moz-keyframes progress-mysql{0%{width: 0%;} 100%{ width: 55%;}}
 
   @keyframes progress-html{0%{width: 0%;} 100%{ width: 95%;}}
   @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-  @keyframes progress-ai{0%{width: 0%;} 100%{ width: 80%;}}
-  @keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 78%;}}
-  @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
-  @keyframes progress-php{0%{width: 0%;} 100%{ width: 75%;}}
-  @keyframes progress-react{0%{width: 0%;} 100%{ width: 70%;}}
-  @keyframes progress-mysql{0%{width: 0%;} 100%{ width: 65%;}}
+  @keyframes progress-webdesign{0%{width: 0%;} 100%{ width: 80%;}}
+  @keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 75%;}}
+  @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
+  @keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
+  @keyframes progress-php{0%{width: 0%;} 100%{ width: 60%;}}
+  @keyframes progress-mysql{0%{width: 0%;} 100%{ width: 55%;}}
 
  
 /*//////RESPONSIVE STYLES//////*/
@@ -842,7 +798,6 @@ and (orientation : landscape) {
     .aboutMePara p {
       padding: 1rem 1rem 0rem 1rem;
       text-align: left;
-      column-count: auto;
       line-height: 1.75;
     }
     .mySkills {
