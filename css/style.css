@@ -279,7 +279,7 @@ text-decoration: none;
   font-family: 'Roboto', sans-serif!important;
   color: black;
   padding: 1rem 4rem 0rem 4rem;
-  text-align: left;
+  text-align: center;
   line-height: 2;
 }
 .btn-primary {
@@ -313,6 +313,8 @@ text-decoration: none;
 }
 .mySkills-title .section-blurb {
   margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 18px;
 }
 
 .little-div {
@@ -358,9 +360,12 @@ text-decoration: none;
 
 .myProjects-title .section-blurb {
   margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 18px;
 }
 .project-row {
-  height: 21rem;
+  height: 22rem;
+  margin-bottom: 2rem;
 }
 .proj1, .proj2, .proj3 {
   height: 20rem;
@@ -377,9 +382,24 @@ text-decoration: none;
   overflow: hidden;
   padding-left: 0px!important;
   padding-right: 0px!important;
-  border-left: 6px solid white;
-    border-right: 6px solid white;
-    border-bottom: 12px solid white;
+}
+.hold-proj-text {
+  display: flex;
+  align-items: center;
+}
+.hold-proj-text .card {
+  padding: 2rem;
+  height: auto;
+  box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+}
+.hold-proj-text h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+.hold-proj-text p {
+  font-size: 14px;
 }
 .proj1{
   background: url('../images/projects/ai-ufl.png');
@@ -797,7 +817,7 @@ and (orientation : landscape) {
     }
     .aboutMePara p {
       padding: 1rem 1rem 0rem 1rem;
-      text-align: left;
+      text-align: center;
       line-height: 1.75;
     }
     .mySkills {
