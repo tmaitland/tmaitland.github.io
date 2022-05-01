@@ -103,9 +103,9 @@ p {
     cursor: pointer;
 	}
 
-/* .pageHeader { 
-    height: 100vh;
-} */
+.page.portfolio {
+  background: rgb(219,226,233);
+}
 .pageHeader { 
   overflow: hidden;
   background-position: cover;
@@ -328,7 +328,7 @@ text-decoration: none;
   background-image: none;
   background-color: rgb(102, 51, 153)!important;
   border-color: rgb(102, 51, 153)!important;
-  width: 30%;
+  width: auto;
   margin: auto;
   padding: 1rem!important;
   box-shadow: 2px 2px 5px rgb(112, 112, 112);
@@ -344,6 +344,7 @@ text-decoration: none;
     height: auto;
     background: rgb(219,226,233);
     padding-bottom: 3.5rem;
+    margin-top: 2rem;
 }
 .myProjects-title {
   display: flex;
@@ -429,6 +430,7 @@ text-decoration: none;
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 2rem;
 }
 
 .contactMe-title h2 {
@@ -644,6 +646,9 @@ h3{
     .collapse {
         display: none;
     }
+    .cog-branding.cog-branding--minimal {
+      padding-bottom: 12px!important;
+    }
 }
 @media (min-width: 993px) {
     .collapse {
@@ -662,6 +667,10 @@ and (orientation : portrait) {
     }
     .left-head {
       height: 42.5vh!important;
+  }
+  .contact-text {
+    line-height: 1.5;
+    font-size: 1rem;
   }
 }
 @media only screen 
@@ -682,14 +691,26 @@ and (orientation : landscape) {
   .left-head {
     height: 75vh;
   }
-  .other-text {
-    padding: 1rem 4rem 0rem 4rem;
+  .about-title {
+    margin-top: 0rem;
+  }
+  .mySkills {
+    display: block;
+    height: auto;
   }
   .contactMe {
-    height: 80vh;
+    height: auto;
   }
   .contactMe-title h2 {
     margin-top: 0rem;
+  }
+  .contact-text {
+    padding: 0rem 3rem;
+    line-height: 2;
+    font-size: 1rem;
+  }
+  .cog-branding.cog-branding--minimal{
+    margin-bottom: 1rem;
   }
 }
 
@@ -818,11 +839,13 @@ and (orientation : landscape) {
     .aboutMePara p {
       padding: 1rem 1rem 0rem 1rem;
       text-align: center;
-      line-height: 1.75;
+      line-height: 1.5;
     }
-    .mySkills {
-      margin-top: 3rem;
-    }
+  .mySkills {
+      margin-top: 2rem;
+      display: block;
+      height: auto;
+  }
   .mySkills-title h2 {
       font-size: 3rem;
   }
@@ -830,13 +853,11 @@ and (orientation : landscape) {
       height: auto;
       margin-top: 0rem;
   }
-  .otherWorkRow {
-    height: auto;
-  }
-  .other-text {
-    padding: 2rem 1rem 0rem 1rem;
-    line-height: 1.75;
-  }
+ .mySkills-title .section-blurb {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 14px;
+}
   .check-btn {
     width: auto;
   }
@@ -846,6 +867,12 @@ and (orientation : landscape) {
   .myProjects-title h2 {
     font-size: 3rem;
     margin-top: 2rem;
+  }
+  .myProjects-title .section-blurb {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem;
   }
   .contactMe {
     height: 70vh;
@@ -891,7 +918,7 @@ and (orientation : landscape) {
       text-shadow: none;
     }
     .pageHeader {
-      height: 30rem;
+      height: auto;
       background: url(../images/mobile-header.png);
       background-size: cover;
       background-position: bottom;
@@ -899,58 +926,57 @@ and (orientation : landscape) {
     .left-head {
       height: 100vh;
     }
-    .pageHeader {
-      height: 100vh; 
-    }
     .bg-video {
       display: none;
     }
     .aboutMe {
-      height: auto;
+      height: 35rem;
+      display: block;
       background-attachment: initial;
     }
     .about-title {
-      font-size: 3rem;
-      margin-top: 6rem;
+      font-size: 2rem;
+      margin-top: 3rem;
     }
     .aboutMePara p {
       padding: 1rem 1rem 0rem 1rem;
-      text-align: left;
+      text-align: center;
       column-count: auto;
-      line-height: 1.75;
+      line-height: 1.5;
+      font-size: 14px;
     }
-  .mySkills-title h2 {
-      font-size: 3rem;
-  }
-    .aboutRow {
+   .mySkills-title h2 {
+      font-size: 2rem;
+  }  
+   .mySkills-title h2 {
+      height: auto;
+  }  
+  .aboutRow {
       height: auto;
       margin-top: 0rem;
   }
-  .otherWorkRow {
-    height: auto;
-  }
-  .other-text {
-    padding: 2rem 1rem 0rem 1rem;
-    line-height: 1.75;
-  }
   .check-btn {
     width: auto;
+    font-size: 14px!important;
+    padding: 0.5rem!important;
   }
   .project-row {
     height: auto;
   }
   .myProjects-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 2rem;
   }
   .contactMe {
     height: auto;
+    padding: 2rem;
   }
   .contactMe-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .contact-text {
     padding: 0rem 1rem;
+    font-size: 14px;
   }
   .social-media {
     margin-right: 1rem;
@@ -960,6 +986,8 @@ and (orientation : landscape) {
   }
   .footer-row {
     padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -970,14 +998,17 @@ and (max-device-width: 767px) {
     height: 100vh;
   }
   .pageHeader {
-    height: 100vh;
+    height: auto;
   }
   .aboutMe {
-    height: 45rem;
-    /* background-attachment: initial; */
+    height: 30rem;
   }
-  .aboutMe .container-fluid {
-    height: 100%;
+  .mySkills {
+    height: auto;
+  }
+  .myProjects {
+    height: auto;
+    margin-top: 3rem;
   }
 }
 @media screen 
@@ -987,7 +1018,7 @@ and (max-device-width: 991px) {
     height: 100vh;
   }
   .pageHeader {
-    height: 100vh;
+    height: auto;
   }
   .mobile-menu-trigger {
     display: block;
@@ -1002,12 +1033,14 @@ and (max-device-width: 991px) {
   }
   .aboutMePara p {
     column-count: auto;
+    line-height: 1.5;
   }
-  .otherWorkRow {
+  .mySkills {
     height: auto;
   }
   .myProjects {
     height: auto;
+    margin-top: 4rem;
   }
   .contactMe {
     height: auto;
@@ -1018,9 +1051,9 @@ and (max-device-width: 991px) {
 
 }
 @media screen and (max-width: 480px) {
-  /* .mySkills {
-    margin-top: 6rem;
-  } */
+  .myProjects {
+    margin-top: 3rem;
+  }  
   .aboutMe {
     padding-bottom: 9rem;
   }
