@@ -776,7 +776,7 @@ and (orientation : landscape) {
       height: 75vh;
     }
     .mySkills {
-      height: 75vh;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -785,7 +785,7 @@ and (orientation : landscape) {
       left: 46%;
     }
     .myProjects {
-      height: 100vh;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -794,6 +794,19 @@ and (orientation : landscape) {
       height: 70vh;
     }
   }
+
+@media screen 
+and (min-width: 769px) 
+and (max-width: 1365px) { 
+  .mySkills {
+    height: auto;
+  }
+ .myProjects .project-row {
+    height: auto;
+    margin-bottom: 4rem;
+}
+  
+}  
 
 @media screen and (max-width: 768px) {
     .menu-ham {
@@ -875,7 +888,7 @@ and (orientation : landscape) {
     padding: 1rem;
   }
   .contactMe {
-    height: 70vh;
+    height: 50rem;
   }
   .contactMe-title h2 {
     font-size: 3rem;
@@ -1001,7 +1014,7 @@ and (max-device-width: 767px) {
     height: auto;
   }
   .aboutMe {
-    height: 30rem;
+    height: 40rem;
   }
   .mySkills {
     height: auto;
